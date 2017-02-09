@@ -1,0 +1,27 @@
+h1 {
+    background-color: purple;
+}
+
+body {
+    background-color: pink;
+}
+
+#instructions {
+    background-color: white;
+}
+
+.box {
+    background-color: white;
+}
+
+#random-number {
+    background-color: orange;
+}
+
+#score-board {
+    background-color: green;
+}
+
+#total-score {
+    background-color: yellow;
+}
