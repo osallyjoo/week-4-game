@@ -20,7 +20,7 @@ var jewels = {
     },
 
 };
-// jewels.generateJewelValues();
+
 var game = {
     totalScore: 0,
     wins: 0,
@@ -50,10 +50,17 @@ $(document).ready(function() {
     $("#jewels img").on("click", function() {
         var crystal = $(this).attr("id");
         console.log("Jewel: " + crystal);
-        console.log("Value: " + jewels[crystal]);
+        $("#gem-1").attr("value", this.gemOne);
+        $("#gem-2").attr("value", this.gemTwo);
+        $("#gem-3").attr("value", this.gemThree);
+        $("#gem-4").attr("value", this.gemFour);
+
 
         // $("#player-wins").text(game.wins);
         // $("#player-losses").text(game.losses);
+
+        //$('#gem-1').data("value", this.gemOne);
+        //$('#gem-1').attr("value", this.gemOne);
 
     });
 
